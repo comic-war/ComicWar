@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comedy Contest Submission</title>
+    
+</head>
+<body>
+    <section id="welcome" class="page">
+        <div class="container">
+            <div class="text-content">
+                <h1>Comedic Showdown: ComicWar's Battle Royale!</h1>
+                <p><ul>
+                    <li>The ComicWar Online Comedy Showdown is open to individuals aged 18 and above.</li>
+                    <li>Comedians are encouraged to keep their routines within a reasonable time frame, with a maximum limit of 5 minutes.</li>
+                    <li>The deadline for online form submissions is [insert deadline date]. Late entries will not be considered.</li>
+                    <li>Participants are required to perform original comedic material. Plagiarism or heavily borrowed content will result in disqualification.</li>
+                    <li>Submissions will be judged based on humor, delivery, originality, and audience engagement.</li>
+                    <li>By submitting to ComicWar, participants grant permission for their performance to be shared on ComicWar platforms for promotional purposes.</li>
+                    <li>Participants are responsible for ensuring their submission meets technical requirements, and the video link remains accessible until the result announcement.</li>
+                    <li>Participants are expected to adhere to a code of conduct that promotes a positive and inclusive online environment. Any violations may result in disqualification.</li>
+                    <li>Prizes will be revealed at the end of this submission form</li>
+                </ul>
+                    </p>
+                <button onclick="nextPage()">Submit Form</button>
+            </div>
+            <div class="image-container">
+                <!-- Add your image or logo here -->
+                <img src="./Resources/comicwarlogo2.png" alt="Logo">
+            </div>
+        </div>
+    </section>
+   
+        <div class="centered">
+            <section id="submission-form" class="page hidden">
+            <h2 style="color: white;">ComicWar Submission Form</h2>
+            <form  action="https://docs.google.com/forms/d/e/1FAIpQLScdnFUThUiwR_bUSkT3vQEPLLFQOLyTpiT7cW4fmWDyNi64iA/formResponse"method="post" id="contestForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.1468406692" >
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="entry.803664838" >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="entry.1118336707" >
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="entry.1035992077" >
+
+                <label for="comedy-experience">How long have you been doing stand-up comedy?</label>
+                <input type="text" id="comedy-experience" name="entry.295019999" >
+
+                <label for="previous-competition">Have you ever participated in any comedy competition before?</label>
+                <input type="text" id="previous-competition" name="entry.536277231" >
+
+                <label for="performance-history">Have you performed in any comedy clubs, festivals, or events? If yes, please specify.</label>
+                <textarea id="performance-history" name="entry.1450998039" ></textarea>
+
+                <label for="instagram-handle">Instagram Handle:</label>
+                <input type="text" id="instagram-handle" name="entry.669982569" >
+
+                <button type="button" onclick="nextPage()">Save and Upload Video</button>
+            </section>
+                <section id="video-upload" class="page hidden">
+                    <div class="centered">
+                        <h2 style="color: white;">Upload Your Comedy Video</h2>
+                            <label for="video">Upload Video URL(Please make it public):</label>
+                            <input type="text" id="video-url" name="entry.1789997095" >
+                            <button type="submit" onclick="nextPage()">Upload</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    
+
+    <section id="thank-you" class="page hidden">
+        <div class="centered">
+            <h2>Thank You for Submitting!</h2>
+            <p>Your entry has been received. Good luck in the competition!</p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
