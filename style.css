@@ -34,6 +34,14 @@ body {
     left: -15px;
     top: 3px;
 }
+#submission-form:not(.hidden)  {
+    display: block;
+}
+
+/* Ensure they are hidden when the parent section is hidden */
+#submission-form.hidden  {
+    display: none;
+}
 .page {
     display: flex;
     align-items: center;
@@ -87,9 +95,6 @@ form {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-#submission-form{
-    margin-top: 210px;
 }
 h2 {
     color: #333;

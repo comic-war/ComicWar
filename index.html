@@ -24,7 +24,7 @@
                     <li>Prizes will be revealed at the end of this submission form</li>
                 </ul>
                     </p>
-                <button onclick="nextPage()">Submit Form</button>
+                <button onclick="nextPage()">Continue</button>
             </div>
             <div class="image-container">
                 <!-- Add your image or logo here -->
@@ -34,41 +34,43 @@
     </section>
    
         <div class="centered">
-            <section id="submission-form" class="page hidden">
+            <section id="submission-form" class="page  hidden">
             <h2 style="color: white;">ComicWar Submission Form</h2>
             <form  action="https://docs.google.com/forms/d/e/1FAIpQLScdnFUThUiwR_bUSkT3vQEPLLFQOLyTpiT7cW4fmWDyNi64iA/formResponse"method="post" id="contestForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="entry.1468406692" >
+                <input type="text" id="name" name="entry.1468406692" required>
 
                 <label for="city">City:</label>
-                <input type="text" id="city" name="entry.803664838" >
+                <input type="text" id="city" name="entry.803664838"required >
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="entry.1118336707" >
+                <input type="email" id="email" name="entry.1118336707" required>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="entry.1035992077" >
+                <input type="tel" id="phone" name="entry.1035992077" required maxlength="10">
 
                 <label for="comedy-experience">How long have you been doing stand-up comedy?</label>
-                <input type="text" id="comedy-experience" name="entry.295019999" >
+                <input type="text" id="comedy-experience" name="entry.295019999" required>
 
                 <label for="previous-competition">Have you ever participated in any comedy competition before?</label>
-                <input type="text" id="previous-competition" name="entry.536277231" >
+                <input type="text" id="previous-competition" name="entry.536277231" required>
 
                 <label for="performance-history">Have you performed in any comedy clubs, festivals, or events? If yes, please specify.</label>
-                <textarea id="performance-history" name="entry.1450998039" ></textarea>
+                <textarea id="performance-history" name="entry.1450998039" required ></textarea>
 
                 <label for="instagram-handle">Instagram Handle:</label>
-                <input type="text" id="instagram-handle" name="entry.669982569" >
+                <input type="text" id="instagram-handle" name="entry.669982569" required>
 
-                <button type="button" onclick="nextPage()">Save and Upload Video</button>
+                <button type="button" onclick="validateAndProceed()()">Save and Upload Video</button>
             </section>
                 <section id="video-upload" class="page hidden">
                     <div class="centered">
                         <h2 style="color: white;">Upload Your Comedy Video</h2>
+                        <div style="background-color: white; padding: 20px;">
                             <label for="video">Upload Video URL(Please make it public):</label>
-                            <input type="text" id="video-url" name="entry.1789997095" >
-                            <button type="submit" onclick="nextPage()">Upload</button>
+                            <input type="url" id="video-url" name="entry.1789997095" required >
+                            <button type="submit" onclick="validateAndProceed()" required>Upload</button>
+                        </div>
                     </div>
                 </section>
             </form>
