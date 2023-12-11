@@ -79,36 +79,7 @@ function validateAndProceed() {
 
 
 
-    // document.getElementById('submission-form').addEventListener('submit', function (event) {
-    //     event.preventDefault();
-    
-    //     const fileInput = document.getElementById('video');
-    
-    //     const formData = new FormData();
-    //     formData.append('entry.1468406692', document.getElementById('name').value); // Example: Replace with the actual form field IDs
-    //     formData.append('entry.803664838', document.getElementById('city').value);
-    //     // ... Repeat this for all other form fields
-    
-    //     formData.append('entry.1715041287', fileInput.files[0]);
-    
-    //     fetch('https://docs.google.com/forms/d/e/1FAIpQLScdnFUThUiwR_bUSkT3vQEPLLFQOLyTpiT7cW4fmWDyNi64iA/formResponse', {
-    //         method: 'POST',
-    //         body: formData,
-    //         mode: 'no-cors'
-    //     })
-    //     .then(response => {
-    //         if (response.ok) {
-    //             console.log('File submitted successfully');
-    //             // Additional actions on successful submission
-    //         } else {
-    //             console.error('File submission failed');
-    //             // Handle the error
-    //         }
-    //     })
-    //     .catch(error => {
-    //         console.error('Error:', error);
-    //     });
-    // });
+
     
 
 document.addEventListener("DOMContentLoaded", function () {
